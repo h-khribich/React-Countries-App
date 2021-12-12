@@ -2,7 +2,9 @@ import React from "react";
 
 const Card = (props) => {
   const { country } = props;
-  console.log(country);
+
+  const popFormat = (x) => x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+
   return (
     <li className="card">
       <img src={country.flags.png} alt="flag" />
@@ -10,7 +12,7 @@ const Card = (props) => {
         <ul>
           <li>{country.name.official}</li>
           <li>{country.capital}</li>
-          <li>Pop: {country.population}</li>
+          <li>Pop: {popFormat(country.population)}</li>
         </ul>
       </div>
     </li>
