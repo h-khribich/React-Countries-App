@@ -18,6 +18,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "server": "json-server --w src/mainAssets/db.json --port 3003",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

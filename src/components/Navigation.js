@@ -7,6 +7,9 @@ const Navigation = () => {
       <NavLink to="/" exact activeClassName="nav-active">
         Accueil
       </NavLink>
+      <NavLink to="news" exact activeClassName="nav-active">
+        News
+      </NavLink>
       <NavLink to="a-propos" exact activeClassName="nav-active">
         À propos
       </NavLink>
